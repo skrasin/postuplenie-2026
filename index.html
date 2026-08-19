@@ -72,38 +72,25 @@
   .msg{font-size:.8rem;color:var(--ink-2);margin:.5rem 0 0;text-align:right;}
   .msg code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
     background:var(--head);padding:.12rem .35rem;border-radius:4px;}
-  @media(max-width:640px){
-    .wrap{padding:1.75rem 1rem 3rem;}
+  @media(max-width:700px){
+    .wrap{padding:1.75rem .5rem 3rem;}
     .bar{gap:.6rem;}
     .actions{width:100%;justify-content:space-between;}
     h1{font-size:1.05rem;}
-    .scroll{overflow-x:visible;border:none;border-radius:0;background:none;}
-    table{display:block;width:100%;}
-    thead{display:none;}
-    tbody{display:block;}
-    tr{display:block;margin-bottom:.75rem;border:1px solid var(--rule);
-      border-radius:8px;background:var(--surface);overflow:hidden;}
-    tbody tr:last-child{margin-bottom:0;}
-    tr.grp{margin-top:1.25rem;}
-    tbody tr.grp td{border-top:none;}
-    td{display:flex;justify-content:space-between;align-items:center;gap:.75rem;
-      padding:.55rem .8rem;text-align:right;white-space:normal;
-      border-bottom:1px solid var(--rule);}
-    tbody tr td:last-child{border-bottom:none;}
-    td.no{display:none;}
-    td.name{display:block;text-align:left;background:var(--head);
-      padding:.6rem .8rem;border-bottom:1px solid var(--rule-2);}
-    td::before{font-size:.72rem;color:var(--ink-3);text-align:left;}
-    td:nth-child(3)::before{content:"Мест";}
-    td:nth-child(4)::before{content:"Договоров всего";}
-    td:nth-child(5)::before{content:"с оплатой";}
-    td:nth-child(6)::before{content:"Позиция по всем";}
-    td:nth-child(7)::before{content:"по оплаченным";}
-    td:nth-child(8)::before{content:"Проходной на границе";}
-    td:nth-child(9)::before{content:"Дата обновления";}
-    td:nth-child(10)::before{content:"Запасных мест";}
-    td:nth-child(11){justify-content:center;background:var(--head);}
-    tr.r-err td[colspan]::before{content:none;}
+    .scroll{overflow-x:visible;}
+    table{table-layout:fixed;font-size:.62rem;line-height:1.25;}
+    th,td{padding:.3rem .18rem;white-space:normal;word-break:break-word;
+      overflow-wrap:anywhere;}
+    thead tr.sub-row th{font-size:.58rem;}
+    .plink{font-size:.62em;margin-top:.05rem;}
+    .pnote{font-size:.62em;}
+    .chip{padding:.1rem .3rem;font-size:.95em;white-space:normal;
+      display:inline-block;line-height:1.2;}
+    col.c-no{width:3.5%} col.c-name{width:17%} col.c-quota{width:6%}
+    col.c-signed{width:6.5%} col.c-paid{width:6.5%}
+    col.c-poss{width:8%} col.c-posp{width:8%}
+    col.c-cut{width:7.5%} col.c-date{width:6.5%}
+    col.c-reserve{width:7.5%} col.c-verdict{width:23%}
   }
 </style>
 <div class="wrap">
@@ -114,6 +101,11 @@
       </div>
     </div>
   <div class="scroll"><table>
+    <colgroup>
+      <col class="c-no"><col class="c-name"><col class="c-quota">
+      <col class="c-signed"><col class="c-paid"><col class="c-poss"><col class="c-posp">
+      <col class="c-cut"><col class="c-date"><col class="c-reserve"><col class="c-verdict">
+    </colgroup>
     <thead>
       <tr>
         <th rowspan="2" class="no">№</th>
