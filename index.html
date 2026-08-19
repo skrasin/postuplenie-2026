@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Позиция абитуриента с 212 баллами — конкурсные списки 2026</title>
 <style>
   :root{--paper:#FAFAFB;--surface:#FFF;--head:#F2F3F6;--ink:#15181D;--ink-2:#4A505C;
@@ -15,7 +16,6 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;}
   .wrap{max-width:74rem;margin:0 auto;padding:2.5rem 1.5rem 4rem;}
-  @media(max-width:640px){.wrap{padding:1.75rem 1rem 3rem;}}
   h1{font-size:1.15rem;font-weight:500;margin:0 0 .3rem;letter-spacing:-.01em;}
   .sub{font-size:.85rem;color:var(--ink-3);margin:0 0 1.5rem;}
   .scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:8px;background:var(--surface);}
@@ -72,13 +72,47 @@
   .msg{font-size:.8rem;color:var(--ink-2);margin:.5rem 0 0;text-align:right;}
   .msg code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
     background:var(--head);padding:.12rem .35rem;border-radius:4px;}
+  @media(max-width:640px){
+    .wrap{padding:1.75rem 1rem 3rem;}
+    .bar{gap:.6rem;}
+    .actions{width:100%;justify-content:space-between;}
+    h1{font-size:1.05rem;}
+    .scroll{overflow-x:visible;border:none;border-radius:0;background:none;}
+    table{display:block;width:100%;}
+    thead{display:none;}
+    tbody{display:block;}
+    tr{display:block;margin-bottom:.75rem;border:1px solid var(--rule);
+      border-radius:8px;background:var(--surface);overflow:hidden;}
+    tbody tr:last-child{margin-bottom:0;}
+    tr.grp{margin-top:1.25rem;}
+    tbody tr.grp td{border-top:none;}
+    td{display:flex;justify-content:space-between;align-items:center;gap:.75rem;
+      padding:.55rem .8rem;text-align:right;white-space:normal;
+      border-bottom:1px solid var(--rule);}
+    tbody tr td:last-child{border-bottom:none;}
+    td.no{display:none;}
+    td.name{display:block;text-align:left;background:var(--head);
+      padding:.6rem .8rem;border-bottom:1px solid var(--rule-2);}
+    td::before{font-size:.72rem;color:var(--ink-3);text-align:left;}
+    td:nth-child(3)::before{content:"Мест";}
+    td:nth-child(4)::before{content:"Договоров всего";}
+    td:nth-child(5)::before{content:"с оплатой";}
+    td:nth-child(6)::before{content:"Позиция по всем";}
+    td:nth-child(7)::before{content:"по оплаченным";}
+    td:nth-child(8)::before{content:"Проходной на границе";}
+    td:nth-child(9)::before{content:"Дата обновления";}
+    td:nth-child(10)::before{content:"Запасных мест";}
+    td:nth-child(11){justify-content:center;background:var(--head);}
+    tr.r-err td[colspan]::before{content:none;}
+  }
 </style>
 <div class="wrap">
   <div class="bar">
     <div>
       <h1>Позиция абитуриента с 212 баллами — РЭУ, РАНХиГС</h1>
       <p class="sub">Обновлено 19.08.2026 10:40</p>
-      </div>
+      <p class="applicant">Уникальный код поступающего: <b>1492960</b></p>
+    </div>
     </div>
   <div class="scroll"><table>
     <thead>
@@ -109,7 +143,7 @@
 <tr class=""><td class="no">9</td><td class="name"><span class="pname">РАНХиГС — Гостиничный бизнес</span><a class="plink" href="https://my.ranepa.ru/online/pk26/list/list.php?FT=1&FL=0&FO=4&F1=3dfc1680-5eff-4887-a318-288990d0e055&F2=5352eced-6808-11e9-80f1-005056a03e4f&F3=3f4ee63d-bf12-11f0-aa18-00620b9300d1&F4=5b1b5e94-f55d-11f0-9fa8-00620bc81861" target="_blank" rel="noopener">список вуза</a></td><td>60</td><td>58</td><td class="nd">н/д</td><td class="key">14-е</td><td class="nd">н/д</td><td>—</td><td class="dt">19.08</td><td class="key">46</td><td><span class="chip c-safe">Проходит с запасом</span></td></tr>
     </tbody>
   </table></div>
-  <div class="changes"><h2>Изменения с прошлого обновления</h2><ul><li>РЭУ Таможенное дело: оплат 46 → 47</li></ul></div>
+  
   <p class="foot">Строки отсортированы по убыванию запаса мест. Счётчики договоров
   вложенные: «всего» — все заключившие договор, «с оплатой» — те из них, кто уже
   внёс деньги. Позиции считаются по тем же множествам: «по всем» — место среди всех
